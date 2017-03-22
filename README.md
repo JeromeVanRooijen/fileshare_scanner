@@ -18,25 +18,15 @@ Note:
 Example dict file:
 
 `P[@a]ssw[o0]rd
-
 Orgname[0-9]
-
 monday[0-9]
-
 tuesday[0-9]
-
 wednesday[0-9]
-
 thursday[0-9]
-
 friday[0-9]
-
 saturday[0-9]
-
 sunday[0-9]
-
-[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}
-`
+[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}`
 
 ##	Mount the Target Filesystem
 It is unlikely the filesystem to be scanned is local (unless you have python installed on the fileserver and you’re running it there, which I’d advise against), so it will have to be mounted.
@@ -56,15 +46,10 @@ $ sudo mount -t cifs //fileserver01.fqdn.co.nz/public /tmp/ fileserver01/ -o use
 
 Example of running the scanner and type of output:
 `sysuser@lnzlwlgslg01:~/projects/fileshare_scanner$ ./scanner.py . dict.txt
-
 "./sops/SOP - Delete SystemX User.docx", "to supply a password to gain aut"
-
 "./sops/SOP - Delete SystemX User.docx", "he supplied username match on of"
-
 Error: cannot open "./unreadable.txt"
-
 "./pdf/NZISM-Part-One-v2.5-July-2016.pdf", "Passwords "
-
 "./pdf/NZISM-Part-One-v2.5-July-2016.pdf", "ecting passwords. "`
 
-Note the Error: cannot open "./unreadable.txt" example of what errors look like.
+Note the `Error: cannot open "./unreadable.txt"` example of what errors look ike.
