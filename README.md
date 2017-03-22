@@ -1,5 +1,5 @@
 # fileshare_scanner
-Scans fileshare for interesting strings in TXT, PDF, and DOCX strings.
+Scans fileshare for interesting strings in TXT, PDF, and DOCX files.
 
 ## Dependencies
 * This script requires the python-docx module. If you have installed the python-docx module (using apt or whatever), remove the sys.path.append("/home/sysuser/projects/tools/python-docx-master/") line. If not, grab the source for this module and change this line to point to wherever you have put this code.
