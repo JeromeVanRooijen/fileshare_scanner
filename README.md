@@ -46,7 +46,7 @@ $ sudo mount -t cifs //fileserver01.fqdn.co.nz/public /tmp/ fileserver01/ -o use
 ## Run the command
 
 Example of running the scanner and type of output:
-````sysuser@lnzlwlgslg01:~/projects/fileshare_scanner$ ./scanner.py . dict.txt
+```sysuser@lnzlwlgslg01:~/projects/fileshare_scanner$ ./scanner.py . dict.txt
 "./sops/SOP - Delete SystemX User.docx", "to supply a password to gain aut"
 "./sops/SOP - Delete SystemX User.docx", "he supplied username match on of"
 Error: cannot open "./unreadable.txt"
