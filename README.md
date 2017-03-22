@@ -40,8 +40,9 @@ Make a directory, then, as root, mount the fileshare (in this case /tmp/fileserv
 
 This will require a valid account on the system, so replace the <USERNAME> string in the below code block with a valid account username. When the mount command is executed, it will prompt for the password of this account used.
 
-`$ mkdir -p /tmp/fileserver01
-$ sudo mount -t cifs //fileserver01.fqdn.co.nz/public /tmp/ fileserver01/ -o username=<USERNAME>`
+```$ mkdir -p /tmp/fileserver01
+$ sudo mount -t cifs //fileserver01.fqdn.co.nz/public /tmp/ fileserver01/ -o username=<USERNAME>
+```
 
 ## Run the command
 
